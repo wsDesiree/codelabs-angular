@@ -5,3 +5,12 @@ let numbers = [];
 
 // From there, add each and every number from the array.
 
+for(let i = 0; i <= 50; i++)(
+    number.push(i)
+)
+
+
+numbers = numbers.filter((num)=>{
+    return num % 2 != 0;
+})
+console.log(numbers)
