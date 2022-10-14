@@ -1,4 +1,17 @@
 <h2>Tasks to Complete </h2>
-<div>
+<!-- <div>
   <input type="text"> <button class="btn btn primiary"></button>
-</div>
+</div> -->
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+  Task Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+<!-- function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+ -->
