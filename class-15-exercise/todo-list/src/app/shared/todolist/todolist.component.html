@@ -1,5 +1,17 @@
 <!-- <p>todolist works!</p> -->
 <!-- render todo components-->
-<div *ngFor="let todoInfo of todolist">
-  <app-todo [todo]="todoInfo"></app-todo>
+<div class="row">
+  <div class="col-xs-12">
+    <a
+      href="#"
+      class="list-group-item"
+      *ngFor="let todoInfo of todolist">
+    </a>
+  </div>
 </div>
+<div class="col-xs-12 col-sm-4">
+  <app-todo></app-todo>
+</div>
+<!-- <div *ngFor="let todoInfo of todolist"> -->
+  <!-- <app-todo [todo]="todoInfo"></app-todo> -->
+<!-- </div> -->

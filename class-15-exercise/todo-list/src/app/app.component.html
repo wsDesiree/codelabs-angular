@@ -1,3 +1,18 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <ul class="nav nav-tab">
+        <li role="presentation" class="active"><a href="#">Home</a></li>,
+        <li role="presentation" ><a href="#">Task List</a></li>,
+        <li role="presentation" ><a href="#">Completed</a></li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+
+<div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+  <router-outlet></router-outlet>
+  </div>
 <app-header></app-header>
 <div class="container">
   <div class="row">
@@ -7,7 +22,9 @@
   </div>
 </div>
 <div class="container">
+  <div class="row">
     <div class="col-6">
       <app-todoform></app-todoform>
     </div>
+  </div>
 </div>

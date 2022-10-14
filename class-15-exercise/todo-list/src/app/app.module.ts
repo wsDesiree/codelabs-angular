@@ -5,22 +5,27 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { TodoformComponent } from './todoform/todoform.component';
 import { TodolistComponent } from './shared/todolist/todolist.component';
-import { SharedComponent } from './shared/shared.component';
 import { TodoComponent } from './shared/todo/todo.component';
 import { ComponentNameComponent } from './component-name/component-name.component';
+import { Routes, RouterModule } from '@angular/router';
 
+const appRoutes: Routes =[
+  { path: 'todo', component: TodoComponent  },
+  { path: 'todolist', component: TodolistComponent  },
+  { path: 'todoform', component: TodoformComponent  }
+];
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TodoformComponent,
     TodolistComponent,
-    SharedComponent,
     TodoComponent,
     ComponentNameComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
